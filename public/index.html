@@ -4,24 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>IChat</title>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="socket.io/socket.io.js"></script>
     <script src="script.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <a href="http://realtime-videochat.herokuapp.com">Video</a>
+    <!-- <a href="http://realtime-videochat.herokuapp.com">Video</a> -->
     
-    <h1>Chat app</h1>
+    <h1 class="heading1" id="head1"><center>CHAT APP</center></h1>
+    <br><br>
+    
+    
     <div id="loginform">
-        <input id="username">
-        <button id="login">LOGIN</button>
+        <input class="input-group mb-3" id="username">
+        <button type="button" class="btn btn-primary" id="login">LOGIN</button>
     </div>
-
+<div id="wel"></div>
+<br><br>
+    
 <div id="chatbox">
-    <input id="msg">
-    <button id="send">SEND</button>
-    <ul id="chats"></ul>
+    <div class="ipb">
+        <input id="msg" class="input-group mb-3">
+    </div>
+    
+    <button id="send" class="btn btn-success">SEND</button>
+    <button class="btn btn-dark" id="draw" onclick=" window.open('https://drawcollaborate.herokuapp.com/','_blank')">Draw Board</button>
+    <br><br>
+    <button class="btn btn-dark" id="vid" onclick=" window.open('https://videochat-application.herokuapp.com/','_blank')">VideoChat</button>
+
+
+    <ul id="chats" class="list"></ul>
 </div>
   
 
